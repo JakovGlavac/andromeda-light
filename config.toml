@@ -4,14 +4,13 @@
 #
 # The actual configuration files are stored in the `config/_default/` folder.
 
-
 ######################### site variables ##############################
 # customize your color and font from here.
 [params.variables]
 white = "#ffffff"
 black = "#000000"
 light = "#FAFAFA"
-primary_color = "#FE6019"
+primary_color = "#E04462"
 
 # font variable
 h1 = "48px"
