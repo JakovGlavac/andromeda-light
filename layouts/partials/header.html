@@ -15,7 +15,7 @@
                 {{ end }}
               </a>
 
-              <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navHeader" aria-controls="navHeader" aria-expanded="false" aria-label="Toggle navigation">
+              <!-- <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navHeader" aria-controls="navHeader" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="d-inline lab la-buromobelexperte"></i>
                 <i class="d-none las la-times"></i>
               </button>
@@ -26,14 +26,14 @@
                   <li class="nav-item {{if .IsHome}}active{{end}}">
                     <a class="nav-link" href="{{ site.BaseURL | relLangURL }}">Home</a>
                   </li>
-                  
+
                   {{ $currentPage := . }}
                   {{ range site.Menus.main }}
 
                   {{ $menu_item_url := .URL | absLangURL }}
                   {{ $page_url:= $currentPage.Permalink | absLangURL }}
                   {{ $active := eq $menu_item_url $page_url}}
-                  
+
                   {{ if .HasChildren }}
                   <li class="nav-item dropdown">
 
@@ -61,13 +61,13 @@
                   {{ end }}
                   {{ end }}
                 </ul>
-        
+
                 <div class="navbar-right">
                   {{ if site.Params.navigation_button.enable }}
                   <a href="{{ site.Params.navigation_button.link | relURL }}" class="btn btn-primary">{{ site.Params.navigation_button.label }}</a>
                   {{ end }}
                 </div>
-              </div>
+              </div> -->
           </nav>
         </div>
      </div>
